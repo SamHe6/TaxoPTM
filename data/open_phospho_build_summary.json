@@ -1,0 +1,76 @@
+{
+  "balance_key": "taxon_group",
+  "balanced_test_negative_ratio": 1.0,
+  "candidate_seen_by_target": {
+    "('ood', '__global__')": 719787,
+    "('test_pool', '__global__')": 414353,
+    "('train', 'animal_other')": 915117,
+    "('train', 'human')": 712147,
+    "('train', 'mouse')": 521679,
+    "('train', 'plant')": 827855,
+    "('train', 'yeast')": 404540,
+    "('val', 'animal_other')": 128834,
+    "('val', 'human')": 81873,
+    "('val', 'mouse')": 65983,
+    "('val', 'plant')": 106469,
+    "('val', 'yeast')": 54687
+  },
+  "clean_dir": "data/processed/open_phospho_clean_cdhit",
+  "default_independent_file": "data/final_species_balanced_dataset/Independent_open_phospho.txt",
+  "final_rows": 57760,
+  "identity_threshold": 0.8,
+  "imbalanced_test_negative_ratio": 5.0,
+  "invalid_rows": 5,
+  "max_mismatches_allowed": 8,
+  "ood_groups": [
+    "bacteria_or_archaea",
+    "fungi_other",
+    "other",
+    "protist",
+    "virus"
+  ],
+  "ood_negative_ratio": 1.0,
+  "out_dir": "data/final_species_balanced_dataset",
+  "raw_dir": "data/raw/open_phospho",
+  "redundant_removed": 8646,
+  "rows_after_identity_filter": 168928,
+  "source_counters": {
+    "dbptm_missing_sequence": 149020,
+    "dbptm_non_sty_or_out_of_range": 64971,
+    "dbptm_sites_seen": 1615054,
+    "dbptm_window_center_mismatch": 6172,
+    "uniprot_residue_mismatch": 5,
+    "uniprot_sites_seen": 116692
+  },
+  "split_counts": {
+    "ood": {
+      "0": 374,
+      "1": 374
+    },
+    "test_balanced": {
+      "0": 2138,
+      "1": 2138
+    },
+    "test_imbalanced": {
+      "0": 10690,
+      "1": 2138
+    },
+    "train": {
+      "0": 17697,
+      "1": 17697
+    },
+    "val": {
+      "0": 2257,
+      "1": 2257
+    }
+  },
+  "split_files": {
+    "ood": "data/final_species_balanced_dataset/Independent_ood_open_phospho.txt",
+    "test_balanced": "data/final_species_balanced_dataset/Independent_balanced_open_phospho.txt",
+    "test_imbalanced": "data/final_species_balanced_dataset/Independent_imbalanced_open_phospho.txt",
+    "train": "data/final_species_balanced_dataset/Training_open_phospho.txt",
+    "val": "data/final_species_balanced_dataset/Validation_open_phospho.txt"
+  },
+  "train_val_negative_ratio": 1.0,
+  "window_size": 41
+}
